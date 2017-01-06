@@ -1,0 +1,294 @@
+/*页头样式*/
+
+#header {
+    height: 100px;
+    border-bottom: 1px solid #e5e5e5;
+    min-width: 650px;
+    position: relative;
+}
+#menu,
+#title {
+    margin-top: 20px;
+    line-height: 60px;
+}
+#title {
+    float: left;
+    margin-left: 5%;
+    font-size: 24px;
+    background: url(../img/logo4.jpg) no-repeat;
+    padding-left: 70px;
+}
+
+/*菜单*/
+
+#menu {
+    float: right;
+    margin-right: 5%;
+    width: 450px;
+}
+#menu li {
+    width: 25%;
+    float: left;
+}
+#menu li a {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+}
+#menu li a:hover,#menu li a.active{
+    color: #D0040F;
+    font-weight:bolder;
+}
+#slide {
+    width: 130px;
+    height: 5px;
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    background: #D0040F;
+    z-index: 2;
+}
+
+/*信息添加与搜索*/
+
+#search_add {
+    position: relative;
+    background: #f1f1f1;
+}
+.oper {
+    padding: 5px;
+    border: 1px solid #e5e5e5;
+    position: absolute;
+    border-top: none;
+    z-index: 1;
+}
+.oper a {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    background: #D0040F;
+    color: #fff;
+    z-index: 1;
+}
+.oper a:hover {
+    background: #e5e5e5;
+    color: #000;
+}
+.oper p {
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.oper p.left {
+    width: 1000px;
+    right: 70px;
+}
+.oper p.right {
+    width: 75px;
+    right: -75px;
+}
+#add {
+    right: 75px;
+    bottom: -40px;
+}
+#search {
+    left: 75px;
+    bottom: -40px;
+}
+#search p.left {
+    width: 75px;
+    left: -75px;
+}
+#search p.right {
+    width: 1000px;
+    left: 70px;
+}
+#search_area {
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    background: #f1f1f1;
+    display: none;
+}
+
+/*列表*/
+
+#container {
+    min-height: 500px;
+    padding: 50px 0px;
+}
+#list {
+    overflow: hidden;
+    position: relative;
+}
+.list {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+}
+.list ul li {
+    height: 40px;
+    line-height: 40px;
+}
+.list ul {
+    overflow: hidden;
+}
+.film_info_list .list_tag li,
+.film_info_list .list_value li {
+    width: 14.2857143%;
+}
+.film_info_list .list_tag li.small_width,
+.film_info_list .list_value li.small_width{
+    width: 5%;
+}
+.film_info_list .list_tag li.big_width,
+.film_info_list .list_value li.big_width{
+    width: 32%;
+}
+.menu_info_list .list_tag li,
+.menu_info_list .list_value li {
+    width: 14.28571428%;
+
+}
+.user_info_list .list_tag li,
+.user_info_list .list_value li {
+    width: 20%;
+}
+.list .list_tag li,
+.list .list_value li {
+    text-align: center;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+.list .list_tag {
+    border-bottom: 1px solid #D0040F;
+}
+.list .list_value {
+    border-bottom: 1px dashed #D0040F;
+}
+.list .list_value a {
+    width: 45%;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    border-radius: 15px;
+    background: #D0040F;
+    color: #fff;
+}
+.film_info_list .list_value a {
+    width: 24%;
+}
+
+/*信息详情页面*/
+
+.detail {
+    width: 650px;
+    height: auto;
+    margin: auto;
+    min-height: 450px;
+}
+#list .list_detail {
+    width: 600px;
+    height: auto;
+    border: 1px solid #D0040F;
+}
+#list .list_detail li {
+    margin: 0px 10px;
+    /*border-bottom: 1px dashed #D0040F;*/
+    padding: 10px 0px;
+}
+#list .list_detail a {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    display: inline-block;
+    line-height: 30px;
+    background: #D0040F;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+}
+#list .list_detail .list_title {
+    text-align: center;
+    background: #D0040F;
+    color: #fff;
+    margin: 0px;
+    border-bottom: 1px solid #D0040F;
+    margin-bottom: 10px;
+}
+#list .list_detail .operation {
+    text-align: center;
+    border-top: 1px solid #D0040F;
+    margin: 0px;
+    border-bottom: none;
+    margin-top: 10px;
+}
+
+/*信息修改页面*/
+
+.update {
+    width: 650px;
+    margin: auto;
+}
+.update .list_detail li label {}
+.update .list_detail li textarea {
+    vertical-align: top;
+    width: 70%;
+    height: 200px;
+}
+.update .list_detail .name {
+    text-align: center;
+}
+.update .list_detail .operation input {
+    width: 80px;
+    line-height: 30px;
+    border: none;
+    text-align: center;
+    background: #D0040F;
+    color: #fff;
+    border-radius: 15px;
+}
+.update .list_detail .form-control {
+    display: inline-block;
+    width: 60%;
+}
+
+/*信息添加页面*/
+
+.add .list_detail li input[type=text] {
+    width: 250px;
+}
+
+/*表单验证*/
+
+span.error {
+    height: 24px;
+    line-height: 24px;
+    padding: 8px 0px 8px 17px;
+    background: url(../img/wrong.png) no-repeat 0px 10px;
+    font-size: 14px;
+    color: #ff3300;
+}
+span.success {
+    height: 24px;
+    line-height: 24px;
+    padding: 8px 0px 8px 17px;
+    background: url(../img/right.png) no-repeat 0px 10px;
+    font-size: 14px;
+    color: #ff3300;
+}
+@media screen and (max-width:900px) {
+    #menu {
+        width: 300px;
+    }
+    #slide {
+        width: 90px;
+    }
+}

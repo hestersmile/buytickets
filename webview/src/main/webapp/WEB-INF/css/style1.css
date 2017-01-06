@@ -1,0 +1,375 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors Chen Jingzhi 
+ * @date    2016-12-17 17:08:19
+ * @version $Id$
+ */
+
+
+/*公共类*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.center-outter {
+    position: relative;
+}
+.center-outter-full {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.center-inner {
+    height: 400px;
+    width: 50%;
+    min-width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: inline-block;
+}
+.form-inline label {
+    display: inline-block;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+    border-color: #D0040F;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(208, 4, 15, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(208, 4, 15, .6);
+}
+.form-inline .form-control {
+    display: inline-block;
+    vertical-align: middle;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: thin dotted;
+    outline: 5px auto rgba(208, 4, 15, .6);
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+    color: #333;
+    text-decoration: none;
+}
+.btn:active,
+.btn.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.inline {
+    margin-left: -4px;
+}
+.two_content {
+    overflow: hidden;
+    padding-left: 250px;
+}
+.two_left {
+    width: 100%;
+    float: left;
+}
+.two_right {
+    width: 250px;
+    float: left;
+    position: relative;
+    left: -260px;
+    margin-left: -100%;
+}
+.header {
+    background: #D0040F url(../img/logo4.png) no-repeat 20px;
+    color: #fff;
+    padding: 20px 0px 20px 90px;
+}
+.content {
+    padding: 20px;
+}
+.page {
+    text-align: center;
+    line-height: 30px;
+    clear: both;
+}
+.page>* {
+    margin-left: 10px;
+}
+.page a {
+    display: inline-block;
+    border: 1px solid #d8d8d8;
+    color: #000;
+    background-color: #F0F0F0;
+    width: 80px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.page a.active {
+    background-color: #D0040F;
+    color: #fff;
+}
+.page a:hover {
+    background-color: #D0040F;
+    color: #fff;
+}
+.page .page_go {
+    display: inline-block;
+}
+.page #pagenum {
+    color: #000;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    width: 60px;
+    height: 32px;
+    padding: 0px 15px;
+    border-radius: 15px 0px 0px 15px;
+}
+.page #num:focus{
+    border-color:#D0040F;
+}
+.page #jump {
+    border-radius: 0px 15px 15px 0px;
+    border-left: none;
+}
+.footer {
+    text-align: center;
+    color: #999;
+    clear: both;
+    padding: 20px;
+}
+
+/*登录*/
+
+.film_login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.area_login {
+    height: 320px;
+    border: 1px solid #D0040F;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(208, 4, 15, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(208, 4, 15, .6);
+    text-align: center;
+}
+.user_type {
+    overflow: hidden;
+    border-bottom: 1px solid #D0040F;
+}
+.user_type li {
+    width: 50%;
+    float: left;
+    line-height: 34px;
+}
+.user_type li.active {
+    background-color: #D0040F;
+    color: #fff;
+}
+.login_type {
+    display: none;
+    padding: 20px;
+}
+.login_type:first-child {
+    display: block;
+}
+.login_type .form-group label {
+    line-height: 34px;
+    width: 15%;
+}
+.login_type .form-group input {
+    width: 84%;
+}
+.login_type img {
+    width: 40px;
+    height: auto;
+}
+.login_third {
+    overflow: hidden;
+}
+.login_third li {
+    float: left;
+    width: 33.333%;
+    cursor: pointer;
+}
+#btn_login {
+    background-color: #D0040F;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/*电影列表*/
+
+.form_search {
+    background-color: #EABFC1;
+    overflow: hidden;
+    padding: 5px 0px;
+    text-align: center;
+}
+.film_search {
+    text-align: center;
+}
+#info_search {
+    border-radius: 15px 0px 0px 15px;
+    width: 50%;
+}
+#btn_search {
+    border-radius: 0px 15px 15px 0px;
+    background-color: #D0040F;
+    color: #fff;
+    outline: none;
+}
+.film_list {
+    clear: left;
+    overflow: hidden;
+    padding: 5px 5px;
+}
+.film_list li {
+    float: left;
+    width: 20%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 5px solid #fff;
+}
+.film_pic {
+    text-align: center;
+}
+.film_pic img {
+    width: 100%;
+    height: auto;
+}
+.film_info .film_title {
+    font-size: 120%;
+    line-height: 30px;
+}
+
+/*电影抢票*/
+
+.film_show {
+    min-width: 550px;
+}
+.film_show .film_buy {
+    clear: left;
+}
+.film_info>p {
+    color: #555;
+}
+.film_info>p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+.film_info p span,
+.film_info li span {
+    font-weight: bolder;
+    color: #000;
+}
+.film_buy {
+    text-align: center;
+    padding: 20px 0px;
+    border-top: 1px dashed #D0040F;
+}
+.film_buy label{
+	font-size: 18px;
+	border-radius: 15px 0px 0px 15px;
+	border: 1px solid #D0040F;
+	line-height: 34px;
+	padding: 0px 20px;
+	vertical-align: middle;
+}
+.film_buy label span{
+	font-weight: bold;
+	color: #D0040F;
+}
+#btn_buy {
+    border-radius: 0px 15px 15px 0px;
+    background-color: #D0040F;
+    color: #fff;
+    width: 30%;
+}
+@media screen and (min-width:900px) {
+    .center-inner {
+        width: 20%;
+    }
+}
+@media screen and (min-width:1120px) {
+    #info_search {
+        width: 30%;
+    }
+    .film_list li {
+        width: 16.6666%;
+    }
+}
+@media screen and (max-width:950px) {
+    .film_list li {
+        width: 25%;
+    }
+}
+@media screen and (max-width:750px) {
+    .film_list li {
+        width: 33.3333%;
+    }
+}
+@media screen and (max-width:500px) {
+    .film_list li {
+        width: 50%;
+    }
+}
